@@ -4,30 +4,42 @@ import java.util.Scanner;
 
 public class index {
 	
+	public static String enterUsername() {
+
+        String username;
+        Scanner input = new Scanner(System.in);
+        
+        /***************************************************/
+        System.out.println("Please enter your username: \n");
+       
+
+        username = input.nextLine().trim().toUpperCase();
+        return username;    
+    }
 	public static int menu() {
 
         int selection;
         Scanner input = new Scanner(System.in);
-
+        
         /***************************************************/
-
         System.out.println("Choose from these choices");
         System.out.println("-------------------------\n");
         System.out.println("1 - View my Todolist");
         System.out.println("2 - Add Item to Todolist");
         System.out.println("3 - Remove Item to Todolist");
-        System.out.println("4 - Quit");
 
         selection = input.nextInt();
         return selection;    
     }
 	
 	public static void main(String[] args) {
-
+		
+		//step1: enter user name
+		String username;
+		username = enterUsername();
+		
+		//step2: take in menu choice
         int userChoice;
-        Scanner input = new Scanner(System.in);
-
-        /*********************************************************/
         userChoice = menu();
 
         //from here you can either use a switch statement on the userchoice 
@@ -35,17 +47,13 @@ public class index {
         //using if/else statements to do your actually functions for your choices.
         switch (userChoice) {
         case 1:
-            // Perform "original number" case.
-            break;
+            // Perform "1
         case 2:
-            // Perform "encrypt number" case.
+            // Perform "2" case.
             break;
         case 3:
-            // Perform "decrypt number" case.
-            break;
-        case 4:
-            // Perform "quit" case.
-            break;
+            // Perform "3" case.
+            break; 
         default:
             // The user input an unexpected choice.
         }
