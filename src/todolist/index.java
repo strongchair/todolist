@@ -44,7 +44,7 @@ public class index {
         return selection;    
     }
 	
-	public static void main(String[] args) throws UnsupportedEncodingException, FileNotFoundException, IOException {
+	public static void main(String[] args) {
 		
 		//step1: enter user name
 		String username;
