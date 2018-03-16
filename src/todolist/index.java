@@ -1,5 +1,17 @@
 package todolist;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
+import java.io.Writer;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
 import java.util.Scanner;
 
 public class index {
@@ -32,7 +44,7 @@ public class index {
         return selection;    
     }
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws UnsupportedEncodingException, FileNotFoundException, IOException {
 		
 		//step1: enter user name
 		String username;
@@ -48,6 +60,7 @@ public class index {
         switch (userChoice) {
         case 1:
             // Perform "1
+        	
         case 2:
             // Perform "2" case.
             break;

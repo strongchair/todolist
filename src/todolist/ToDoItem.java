@@ -1,4 +1,4 @@
-package test;
+package todolist;
 
 public class ToDoItem {
 	private String name;
